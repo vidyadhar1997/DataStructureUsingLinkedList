@@ -75,7 +75,7 @@ namespace DataStructureUsingLinkedList
         /// <param name="poistion">The poistion.</param>
         /// <param name="data">The data.</param>
         /// <returns>data at second poistion</returns>
-        internal Node InsertAtParticularPoistion(int poistion,int data)
+        public Node InsertAtParticularPoistion(int poistion,int data)
         {
             if (poistion < 1)
                 Console.WriteLine("Invalid Poistion");
@@ -159,7 +159,7 @@ namespace DataStructureUsingLinkedList
         /// Finds the poistion.
         /// </summary>
         /// <param name="value">The value.</param>
-        /// <returns></returns>
+        /// <returns>position</returns>
         public int findPoistion(int value)
         {
             int position = 0;
