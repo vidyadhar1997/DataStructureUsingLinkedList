@@ -8,6 +8,7 @@ namespace DataStructureUsingLinkedList
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome To the Data structure program using Linked List");
+            //Ablity To Create Linked List By Appending
             LinkedList linkedList = new LinkedList();
             linkedList.Add(56);
             linkedList.Add(30);
