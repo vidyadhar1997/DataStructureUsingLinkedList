@@ -19,11 +19,12 @@ namespace LinkedListTesting
             Node node=linkedListTesting.Search(30);
             Assert.AreEqual(30, node.data);
         }
+
         /// <summary>
-        /// Tests the method for given value on 30 then should search and find node.
+        /// Tests the method for given value on 30 then should search and insert 40 after 30.
         /// </summary>
         [TestMethod]
-        public void GivenValue_When30_ThenShouldSearchAndInsert40After30()
+        public void GivenValue_When40_ThenShouldSearchAndInsert40After30()
         {
             LinkedList linkedListTesting = new LinkedList();
             linkedListTesting.Add(56);

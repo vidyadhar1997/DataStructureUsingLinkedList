@@ -174,5 +174,21 @@ namespace DataStructureUsingLinkedList
             }
             return position;
         }
+
+        /// <summary>
+        /// Sizes this instance.
+        /// </summary>
+        /// <returns>size</returns>
+        public int size()
+        {
+            int size = 0;
+            Node temp = this.head;
+            while (temp != null)
+            {
+                size++;
+                temp = temp.next;
+            }
+            return size;
+        }
     }
 }
