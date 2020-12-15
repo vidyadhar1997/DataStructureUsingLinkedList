@@ -60,7 +60,7 @@ namespace DataStructureUsingLinkedList
             {
                 Console.WriteLine("Linked List is empty");
             }
-            Console.WriteLine("Squence of linked list");
+            Console.WriteLine("Squence of linked list = ");
             while (temp != null)
             {
                 Console.WriteLine(temp.data + " ");

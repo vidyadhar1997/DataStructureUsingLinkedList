@@ -31,7 +31,12 @@ namespace DataStructureUsingLinkedList
             linkedList.InsertAtParticularPoistion(1,56);
             Console.WriteLine("last element is poped out from linked list = " + linkedList.removeLastNode().data);
             linkedList.Display();
-
+            SortedLinkedList sortedLinkedList = new SortedLinkedList();
+            sortedLinkedList.Add(56);
+            sortedLinkedList.Add(30);
+            sortedLinkedList.Add(40);
+            sortedLinkedList.Add(70);
+            sortedLinkedList.Display();
         }
     }
 }
