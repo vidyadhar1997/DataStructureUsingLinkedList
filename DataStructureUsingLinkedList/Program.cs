@@ -19,6 +19,13 @@ namespace DataStructureUsingLinkedList
             linkedList.Add2(30);
             linkedList.Add2(56);
             linkedList.Display();
+            linkedList = new LinkedList();
+            linkedList.Add(56);
+            linkedList.Add(70);
+            linkedList.Display();
+            Console.WriteLine("\n");
+            linkedList.InsertAtParticularPoistion(2, 30);
+            linkedList.Display();
         }
     }
 }

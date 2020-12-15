@@ -68,5 +68,40 @@ namespace DataStructureUsingLinkedList
             }
             Console.WriteLine();
         }
+
+        /// <summary>
+        /// Inserts at particular poistion ie 2.
+        /// </summary>
+        /// <param name="poistion">The poistion.</param>
+        /// <param name="data">The data.</param>
+        /// <returns>data at second poistion</returns>
+        public Node InsertAtParticularPoistion(int poistion,int data)
+        {
+            if (poistion < 1)
+                Console.WriteLine("Invalid Poistion");
+            if (poistion == 1)
+            {
+                var newNode = new Node(data);
+                newNode.next = this.head;
+                head = newNode;
+            }
+            else
+            {
+                while(poistion-- != 0)
+                {
+                    if (poistion == 1)
+                    {
+                        Node node = new Node(data);
+                        node.next = this.head.next;
+                        head.next = node;
+                        break;
+                    }
+                    head = head.next;
+                }
+                if (poistion != 1)
+                    Console.WriteLine("poistion out of range");
+            }
+            return head;
+        }
     }
 }
