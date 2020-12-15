@@ -176,6 +176,33 @@ namespace DataStructureUsingLinkedList
         }
 
         /// <summary>
+        /// Deletes the node.
+        /// </summary>
+        /// <param name="deletData">The delet data.</param>
+        public void deleteNode(int deletData)
+        {
+            if (this.head == null)
+                return;
+            else if (this.head.data == deletData && this.head.next == null)
+                this.head = null;
+            else if (this.head.data == deletData)
+                this.head = this.head.next;
+            else
+            {
+                Node temp = this.head;
+                while (temp.next != null)
+                {
+                    if (temp.next.data == deletData)
+                    {
+                        temp.next=temp.next.next;
+                        break;
+                    }
+                    temp = temp.next;
+                }
+            }
+        }
+
+        /// <summary>
         /// Sizes this instance.
         /// </summary>
         /// <returns>size</returns>

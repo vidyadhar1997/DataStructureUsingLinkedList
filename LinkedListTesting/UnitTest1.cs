@@ -34,5 +34,21 @@ namespace LinkedListTesting
             int poistion=linkedListTesting.findPoistion(40);
             Assert.AreEqual(3,3);
         }
+
+        /// <summary>
+        /// Tests the method for given value on 30 then should search and insert 40 after 30.
+        /// </summary>
+        [TestMethod]
+        public void GivenValue_When40_ThenShouldDeleteAndShowSizeOfLinkedList()
+        {
+            LinkedList linkedListTesting = new LinkedList();
+            linkedListTesting.Add(56);
+            linkedListTesting.Add(30);
+            linkedListTesting.Add(40);
+            linkedListTesting.Add(70);
+            linkedListTesting.deleteNode(40); ;
+            int size=linkedListTesting.size();
+            Assert.AreEqual(3, size);
+        }
     }
 }
