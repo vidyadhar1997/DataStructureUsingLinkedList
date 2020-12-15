@@ -4,9 +4,9 @@ using System.Text;
 
 namespace DataStructureUsingLinkedList
 {
-    class LinkedList
+    public class LinkedList
     {
-        internal Node head;
+        public Node head;
 
         /// <summary>
         /// Add methode to add the specific data into linked list
@@ -35,7 +35,7 @@ namespace DataStructureUsingLinkedList
         /// Add2 methode to add the specified data into linked list.
         /// </summary>
         /// <param name="data">The data.</param>
-        public void Add2(int data)
+        internal void Add2(int data)
         {
             Node node = new Node(data);
             if (this.head == null)
@@ -53,7 +53,7 @@ namespace DataStructureUsingLinkedList
         /// <summary>
         /// Display methode for display the specific data.
         /// </summary>
-        public void Display()
+        internal void Display()
         {
             Node temp = this.head;
             if (temp == null)
@@ -75,7 +75,7 @@ namespace DataStructureUsingLinkedList
         /// <param name="poistion">The poistion.</param>
         /// <param name="data">The data.</param>
         /// <returns>data at second poistion</returns>
-        public Node InsertAtParticularPoistion(int poistion,int data)
+        internal Node InsertAtParticularPoistion(int poistion,int data)
         {
             if (poistion < 1)
                 Console.WriteLine("Invalid Poistion");
@@ -108,7 +108,7 @@ namespace DataStructureUsingLinkedList
         /// Removes the first node from list.
         /// </summary>
         /// <returns>deleted node</returns>
-        public Node removeFirstNode()
+        internal Node removeFirstNode()
         {
             if (this.head == null)
                 return null;
@@ -121,7 +121,7 @@ namespace DataStructureUsingLinkedList
         /// Removes the last node from list.
         /// </summary>
         /// <returns>deleted node</returns>
-        public Node removeLastNode()
+        internal Node removeLastNode()
         {
             if (head == null)
                 return null;
