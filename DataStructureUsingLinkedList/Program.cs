@@ -26,6 +26,8 @@ namespace DataStructureUsingLinkedList
             Console.WriteLine("\n");
             linkedList.InsertAtParticularPoistion(2, 30);
             linkedList.Display();
+            Console.WriteLine("First element is poped out from linked list = " +  linkedList.removeFirstNode().data);
+            linkedList.Display();
         }
     }
 }
