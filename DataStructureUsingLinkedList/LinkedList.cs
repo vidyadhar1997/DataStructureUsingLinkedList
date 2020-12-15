@@ -103,6 +103,11 @@ namespace DataStructureUsingLinkedList
             }
             return head;
         }
+
+        /// <summary>
+        /// Removes the first node from list.
+        /// </summary>
+        /// <returns>deleted node</returns>
         public Node removeFirstNode()
         {
             if (this.head == null)
@@ -110,6 +115,26 @@ namespace DataStructureUsingLinkedList
             Node temp = head;
             head = head.next;
             return temp;
+        }
+
+        /// <summary>
+        /// Removes the last node from list.
+        /// </summary>
+        /// <returns>deleted node</returns>
+        public Node removeLastNode()
+        {
+            if (head == null)
+                return null;
+            if (head.next == null)
+                return null;
+            Node newNode = head;
+            while (newNode.next.next != null)
+            {
+                newNode = newNode.next;
+            }
+            Node lastElement = newNode.next;
+            newNode.next = null;
+            return lastElement;
         }
     }
 }
