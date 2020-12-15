@@ -136,5 +136,23 @@ namespace DataStructureUsingLinkedList
             newNode.next = null;
             return lastElement;
         }
+
+        /// <summary>
+        /// Searches the specified node with value.
+        /// </summary>
+        /// <param name="value">The value.</param>
+        /// <returns>node</returns>
+        public Node Search(int value)
+        {
+            while (this.head != null)
+            {
+                if (this.head.data == value)
+                {
+                    return this.head;
+                }
+                this.head = this.head.next;
+            }
+            return null;
+        }
     }
 }

@@ -14,6 +14,8 @@ namespace DataStructureUsingLinkedList
             linkedList.Add(30);
             linkedList.Add(70);
             linkedList.Display();
+            Console.WriteLine("searched node is = "+ linkedList.Search(30).data);
+            linkedList.Display();
             linkedList = new LinkedList();
             linkedList.Add2(70);
             linkedList.Add2(30);
